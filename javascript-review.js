@@ -1,12 +1,29 @@
-// You may NOT use Google. These questions are to test how you are progressing through the material, and to give you some feedback about where you might improve. Get through as many of these as you can. If you don’t get through all of them it’s ok - the test is designed to be difficult. If you can’t remember a bit of code, write the pseudo-code that represents how you would write your JS code.
+You may NOT use Google. These questions are to test how you are progressing through the material, and to give you some feedback about where you might improve. Get through as many of these as you can. If you don’t get through all of them it’s ok - the test is designed to be difficult. If you can’t remember a bit of code, write the pseudo-code that represents how you would write your JS code.
+
 
 // 1.
 
 // Create an object that has four properties. One property should be set so that the value is a number, another property set to a string, the third to an array, and the fourth to a function. This function should simply console.log the value of the first property.
+const function1 = () => {
+    console.log('1')
+}
+const object = {
+    property1 : 3,
+    property2 : "Brandon",
+    property3 : [1,2]
+    property4 : function()
+}
 
 // 2.
 
 // Write a constructor function (to create objects) that takes one argument. It should use that argument to set the value of the first attribute of the object. There should be a second attribute that stores the value ‘red’. 
+
+class Car {constructor(name){
+        this.name = name 
+        this.color = red
+    }}
+
+ford = new Car(ford)
 
 // Note that a constructor function is the old school syntax that was used in javascript before the sugar class syntax came along. 
 
@@ -14,22 +31,37 @@
 
 // Can you access variables defined outside of functions within the scope of functions in JS? Show a simple example of this being used? (Define a constant in global scope and use that in a very simple function.)
 
+yes , 
+
+x = 1
+const function1 = () => {
+    x = x + 1
+    return x 
+}
 // 4.
 
 // What two ways can be used to access the properties of objects in JS? Give examples of both (although assume the objects have been defined).
 
+objectName.property
+objectNmae[property]
 // 5.
 
 // What is JSON? Be clear but concise.
+JSON stands for Javascript Object Notation. It is a data structure that stores values in a combination of arrays and objects.
 
 // 6.
 
 // What is a callback?
-
+a function takes another function as its arguments
 // 7.
 
 // Define a function with that takes two number arguments and a callback. The function will add the two numbers and pass them to the callback as an argument. Now call this function and in the callback simply console.log out the argument that has been passed through.
 
+
+
+const array.forEach = (num1, num2,) => {
+
+}
 // 8.
 
 // Why do we use promises?
@@ -41,6 +73,8 @@
 // 10.
 
 // What is the DOM?
+
+JSON stands for Javascript Object Notation. It is a data structure that stores values in a combination of arrays and objects.
 
 // 11.
 
@@ -140,7 +174,7 @@
 // Using the code from above as a template, implement the same functionality using the class sugar syntax 
 // Note that you'll need to comment out the code from above for this to work
 
-// b. 
+// b. //
 // Implement another instance method for your class that takes in age and height (in cms) as arguments (both number type) and adds these arguments as attributes to your person object
 
 // console.log the updated person object showing all three attributes (name, age, height) as being a part of the person object
